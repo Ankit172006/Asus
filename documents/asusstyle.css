@@ -1,0 +1,615 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.headerpart1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 72px;
+    font-family: TTNormsProRegular,MyriadRegular,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
+    background-color: #181818;
+}
+.hpart2left img:hover
+{
+    cursor: pointer;
+}
+#stay
+{
+    width: 104px;
+    height: 40px;
+    align-items: center;
+    justify-content:center;
+    font-family: TTNormsProRegular,MyriadRegular,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
+    outline: none;
+    border: none;
+    background-color: #181818;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+#stay:hover
+{
+    background-color: #fff;
+    color: #000;
+    transition: .5s;
+}
+#switch
+{
+    height: 40px;
+    width: 298px;
+    align-items: center;
+    justify-content: center;
+    font-family: TTNormsProRegular,MyriadRegular,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
+    background-color: #006ce1;
+    outline: none;
+    border: none;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+.hpart1btn
+{
+    display: flex;
+    margin-right: 26px;
+    gap: 7px;
+}
+.hpart1btn button
+{
+    border-radius: 5px;
+}
+#switch:hover
+{
+    background-color: #024995;
+    transition: .5s;
+}
+.hpart1text span
+{
+color: #fff;
+font-family: TTNormsProRegular,MyriadRegular,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
+font-size: 0.8125rem;
+    
+}
+.headerpart2
+{
+    display: flex;
+    justify-content: center;
+    gap: 55%;
+    height: 36px;
+    align-items: center;
+}
+.hpart2left
+{
+    display: flex;
+    justify-content: space-between;
+    width: 267px;
+}
+.hpart2right
+{
+    width: 151px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+.hpart2right a
+{
+    text-decoration: none;
+    color: #4d4d4d;
+    font-weight: 600;
+}
+.headerpart3
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 55px;
+}
+.asuslogo img 
+{
+    width: 78px;
+}
+.naving
+{
+    width: 877px;
+}
+.naving ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+.naving ul li a,.naving ul li
+{
+    text-decoration: none;
+    list-style: none;
+    color: #4d4d4d;
+    font-weight: 500;
+    font-size: 17px;
+}
+.navingpart2
+{
+    display: flex;
+    align-items: center;
+    width: 143px;
+    justify-content: space-evenly;
+}
+.navingpart2 a
+{
+    text-decoration: none;
+    color: #4d4d4d;
+    font-weight: 500;
+    font-size: 17px;
+}
+#id,.hr
+{
+    color:#4d4d4d;
+}
+.main_banner
+{
+    width: 100%;
+}
+.main_banner img
+{
+    height: 720px;
+    width: 100%;
+    object-fit: cover;
+}
+.headerpart4 span a
+{
+    text-decoration: none;
+    color: #024995;
+}
+.headerpart4
+{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fourspan
+{
+    font-size:17px;
+}
+.navingpart2 svg:hover
+{
+    cursor: pointer;
+}
+.hpart2right a:hover
+{
+    color: #000;
+    transition: .5s;
+}
+#label
+{
+    display: none;
+}
+#asuscheck
+{
+    display: none;
+}
+.cross
+{
+    display: none;
+}
+.rightside img
+{
+    width: 370px;
+    height: 220px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1.2s;
+}
+.fiveimgcontainer
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* height: 550px; */
+    align-items: center;
+}
+.leftside img
+{
+    width: 730px;
+    height:450px ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.leftside:hover,.rightside img:hover
+{
+  transform: scale(1.05);
+  z-index: 0;
+  transition: 1s;
+}
+.card_img img:hover
+{
+    transform: scale(1.2);
+    /* z-index: 0; */
+    transition: 1s;
+}
+.card_img{
+    cursor: pointer;
+    transition: all 1s;
+}
+.card_img img
+{
+    cursor: pointer;
+    transition: all 1s;
+}
+.leftside
+{
+    position: relative;
+    transition: 1.2s;
+}
+.rightside
+{
+    display: flex;
+    gap: 10px;
+    transition: 1.2s;
+    cursor: pointer;
+}
+.upperpart,.lowerpart
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.headerpart5
+{
+     height: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position:absolute;
+    width: 100%;
+    background-color: #fff;
+    top: -15%;
+}
+#search
+{
+   width: 30%;
+   border: 2px solid #000;
+   border-radius: 30px;
+   display: flex;
+   align-items: center;
+   
+}
+#search svg
+{
+    margin-right: 10px;
+}
+#search svg:hover
+{
+    cursor: pointer;
+}
+.search
+{
+    outline: none;
+     border: none;
+    width: 95%;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+#cross
+{
+    cursor: pointer;
+}
+.lefttext
+{
+    position: absolute;
+    top: 89%;
+    left: 66%;
+}
+.lefttext h2 a
+{
+    color: #fff;
+    /* text-decoration: none; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#asuscheck:checked ~ .naving
+{
+  left:0;
+  transition: .9s;
+}
+
+@media only screen and (max-width:480px)
+{
+    .headerpart1
+    {
+        height: 147px;
+        flex-direction: column;
+    }
+    .hpart1btn
+    {
+        flex-direction: column;
+    }
+    #stay,#switch
+    {
+        width: 110%;
+        justify-content: center;
+        align-items: center;
+    }
+    .hpart1text
+    {
+        text-align: center;
+    }
+    .headerpart2
+    {
+        justify-content: center;
+        gap: 10px;
+    }
+    .headerpart4
+    {
+        text-align: center;
+    }
+    .main_banner img
+    {
+        width: 100%;
+    }
+    #label
+    {
+    display: block;
+    }
+    .naving
+    {
+        position: fixed;
+        top: 227px;
+        height: 273px;
+        width: 100%;
+        left: -100%;
+        transition: .9s;
+        background-color: #000;
+    }
+    .naving ul
+    {    flex-direction: column;
+        position: fixed;
+        display: flex;
+        top: 240px;
+        height: 244px;
+        text-align: center;
+        justify-content: space-between;
+        /* left: -100%; */
+        width: 100%;
+       
+    }
+    .naving ul li a
+    {
+        color: #fff;
+    }
+
+    .headerpart3
+    {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .asuslogo
+    {
+        width: 166px;
+        justify-content: end;
+        display: flex;
+    }
+    .fiveimgcontainer
+    {
+        flex-direction: column;
+    }
+    .leftside img
+    {
+        width: 412px;
+        object-fit: cover;
+    }
+    .rightside img
+    {
+    width: 199px;
+    object-fit: cover;
+    height: 180px;
+    }
+    #search
+    {
+        width: 86%;
+    }
+    .leftside:hover,.rightside img:hover
+    {
+      transform:none;
+      z-index: none;
+      transition:none;
+}
+}
+
+/* graphicscard part */
+.graphics_card-main_conrtainer
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.resulttext,.displaytext
+{
+   justify-content:center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.resulttext h1 a,.displaytext h1 a
+{
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.card_name h2
+{
+    font-size: 1.0625rem;
+    font-family: TTNormsProMedium,MyriadSemibold,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
+}.card
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    gap: 10px;
+}
+.card_discription span
+{
+    font-family: TTNormsProMedium,MyriadSemibold,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
+    font-weight: 600;
+}
+.btn-card
+{
+    outline: none;
+    width: 252px;
+    height: 30px;
+    border: none;
+    background-color: #006ce1;
+    color: #fff;
+    border: 1px solid #006ce1;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.card_name
+{
+    height: 45px;
+}
+.card_discription{
+    height: 108px;
+}
+.card_button:hover
+{
+    cursor: pointer;
+}
+.firstrow,.secondrow,.thrrow
+{
+    display: flex;
+    gap: 5px;
+
+}
+
+@media only screen and (max-width:480px)
+{
+    .firstrow,.secondrow,.thrrow
+    {
+        flex-direction: column;
+    }
+}
+
+/* footer responsive part */
+.leftside_footer,.rightside_footer
+{
+    display: flex;
+    gap: 50px;
+}
+.row1 ul li a,.row1 ul li
+{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-family: TTNormsProMedium,MyriadSemibold,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
+}
+.footer_main-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.footer-header
+{
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+.row1 ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.row1 ul li a:hover
+{
+    text-decoration: underline;
+    transition: .5s;
+    color:blue;
+}
+
+.column
+{
+    display: flex;
+    gap: 50px;
+}
+.social_media-link
+{
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+}
+.link_account 
+{
+    display: flex;
+    gap: 10px;
+}
+.link_account a
+{
+    color: #4e7fc4;
+}
+.last_footer
+{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 550px;
+}
+.lastleft
+{
+  display: flex;
+  gap: 20px;
+}
+.lastright
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.lastleft a,.lastright a,.lastleft span
+{   
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    font-family: TTNormsProMedium,MyriadSemibold,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
+}
+.lastleft a:hover,.lastright a:hover
+{
+    text-decoration: underline;
+    transition: .4s;
+}
+.link_account a:hover
+{
+    color: #0d0d0d;
+    transition: all .5s;
+}
+@media only screen and (max-width:480px)
+{
+    .leftside_footer
+    {
+        display: block;
+        margin-top: 20px;
+    }
+    .column
+    {
+        margin-bottom: 30px;
+    }
+    .last_footer
+    {
+        gap: 2px;
+    }
+}

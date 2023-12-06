@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displays.India</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="x-icon">
+    <link rel="stylesheet" href="./asusstyle.css">
+</head>
+<body>
+    <header>
+        <div class="headerpart1">
+          <div class="hpart1text">
+            <span>Suggest to select and visit the website of your location for more relevant products, promotions and events.</span>
+          </div>
+          <div class="hpart1btn">
+            <button id="stay">Stay here</button>
+            <button id="switch">Switch the website on your location</button>
+          </div>
+        </div>
+        <div class="headerpart2">
+            <div class="hpart2left">
+                <img src="https://www.asus.com/media/Odin/images/header/ROG_hover.svg" alt="">|
+                <img src="https://www.asus.com/media/Odin/images/header/ProArt_hover.svg" alt="">|
+                <img src="https://www.asus.com/media/Odin/images/header/IoT_hover.svg" alt="">|
+                
+            </div>
+            <div class="hpart2right">
+                <a href="" id="gaming">Gaming</a>
+                <a href="" id="business">Business</a>
+            </div>
+        </div>
+        <!-- <hr id="hr"> -->
+        <div class="headerpart3">
+            <input type="checkbox" name="" id="asuscheck">
+            <div class="checkbox">
+             <div class="hambergun">                <label for="asuscheck"id="label"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 50 50"><path fill="currentColor" d="M10 12h30v4H10zm0 10h30v4H10zm0 10h30v4H10z"/></svg></label>
+            </div>
+            <div class="cross">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="currentColor" d="M2.22 2.22a.749.749 0 0 1 1.06 0L6 4.939L8.72 2.22a.749.749 0 1 1 1.06 1.06L7.061 6L9.78 8.72a.749.749 0 1 1-1.06 1.06L6 7.061L3.28 9.78a.749.749 0 1 1-1.06-1.06L4.939 6L2.22 3.28a.749.749 0 0 1 0-1.06Z"/></svg>
+            </div>
+
+            </div>
+         <div class="asuslogo">
+            <img src="data:image/png;base64,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" alt="">
+         </div>
+
+         <div class="naving">
+            <ul id="ul">
+            <li><a href="./asusindex.html">Home</a></li>
+            <li><a href="">Laptops</a></li>
+            <li><a href="">Displays / Desktops</a></li>
+            <li><a href="">Motherboards / Components</a></li>
+            <li><a href="">Mobile / Handhelds </a></li>
+            <li><a href="./graphics.html">Graphics crad</a></li>
+            </ul>
+         </div> 
+         <div class="navingpart2">
+            <a href="">Support</a>
+             <div id="onclick" onclick="ankit()" style="display: flex;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314Z"></svg>
+             </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 36 36"><path fill="currentColor" d="M18 17a7 7 0 1 0-7-7a7 7 0 0 0 7 7Zm0-12a5 5 0 1 1-5 5a5 5 0 0 1 5-5Z" class="clr-i-outline clr-i-outline-path-1"/><path fill="currentColor" d="M30.47 24.37a17.16 17.16 0 0 0-24.93 0A2 2 0 0 0 5 25.74V31a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2v-5.26a2 2 0 0 0-.53-1.37ZM29 31H7v-5.27a15.17 15.17 0 0 1 22 0Z" class="clr-i-outline clr-i-outline-path-2"/><path fill="none" d="M0 0h36v36H0z"/></svg>
+         </div>
+        
+        </div>
+        <hr>
+        <div class="headerpart4">
+            <span id="fourspan">
+                Create an ASUS account today to register your product for better support. <a href="">Learn more></a>
+                </span>
+        </div>
+        <!-- <hr> -->
+        <div class="headerpart5">
+            <div id="search">
+                <input type="search" class="search" placeholder="search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314Z"/></svg>
+              
+            </div>
+            <div id="cross" onclick="karan()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-dasharray="16" stroke-dashoffset="16" stroke-linecap="round" stroke-width="2"><path d="M7 7L17 17"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="16;0"/></path><path d="M17 7L7 17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.4s" values="16;0"/></path></g></svg>
+            </div>
+        </div>
+
+    </header> 
+    <div class="displaytext">
+        <h1><a href="">Display and Desktops "Asus" </a></h1>
+    </div>
+    <div class="graphics_card-main_conrtainer">
+        <div class="firstrow">   
+             <div class="card">
+            <div class="card_img">
+                <img src="https://dlcdnwebimgs.asus.com/gain/cf1974d4-b839-4f2b-9b25-c33ace64ff4d/w185/fwebp" alt="">
+            </div>
+            <div class="card_name">
+                <h2>ProArt Display PA169CDV</h2>
+            </div>
+            <div class="card_discription">
+                <span>ASUS ProArt PA169CDV Pen Display <br> 15.6-inch, IPS, 4K UHD (3840 x <br> 2160), WACOM EMR, 100% sRGB,<br> Color Accuracy ΔE  2, Calman <br> Verified, PANTONE Validated, USB-C,</span>
+            </div>
+            <div class="card_button">
+                <button class="btn-card">Learn more</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://dlcdnwebimgs.asus.com/gain/ede3a100-f549-4ea0-af42-dcbfb7b843fe/w185/fwebp" alt="">
+            </div>
+            <div class="card_name">
+                <h2>ASUS ZenScreen MB16AHV</h2>
+            </div>
+            <div class="card_discription">
+                <span>ASUS ZenScreen MB16AHV Portable <br> Monitor- 16 inch (15.6 inch viewable) <br> Full HD, IPS, HDMI, USB Type-C, Blue <br> Light Filter, Anti-glare surface, <br> Antibacterial treatment</span>
+            </div>
+            <div class="card_button">
+                <button class="btn-card">Learn more</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://dlcdnwebimgs.asus.com/gain/2415e8cb-9e6e-4150-a4b1-69b4d904e8fb/w185/fwebp" alt="">
+            </div>
+            <div class="card_name">
+                <h2>ASUS ZenScreen MB16QHG</h2>
+            </div>
+            <div class="card_discription">
+                <span>ASUS ZenScreen MB16QHG Portable <br> Monitor 16-inch 16:10 WQXGA <br> (2560 x 1600) IPS panel, 120 Hz <br> refresh rate, DisplayHDR™ 400, 100%</span>
+            </div>
+            <div class="card_button">
+                <button class="btn-card">Learn more</button>
+            </div>
+        </div></div>
+         <div class="secondrow">    
+            <div class="card">
+            <div class="card_img">
+                <img src="https://dlcdnwebimgs.asus.com/gain/e595fc18-19f2-4d58-a3f0-118becaa100f/w185/fwebp" alt="">
+            </div>
+            <div class="card_name">
+                <h2>ZenScreen MB166B</h2>
+            </div>
+            <div class="card_discription">
+                <span>ASUS ZenScreen MB166B Portable <br> USB Monitor- 16 inch (15.6 inch<br>  viewable) Full HD, IPS, USB 3.2,<br> Anti -glare surface</span>
+            </div>
+            <div class="card_button">
+                <button class="btn-card">Learn more</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://dlcdnwebimgs.asus.com/gain/5aad02b2-df29-4264-be62-f566ce3d58af/w185/fwebp" alt="">
+            </div>
+            <div class="card_name">
+                <h2>ASUS ZenScreen OLED MQ13AH<br></h2>
+            </div>
+            <div class="card_discription">
+                <span>ASUS ZenScreen OLED MQ13AH <br> portable monitor  13.3-inch FHD <br> (1920 x 1080), OLED, 100% DCI-P3, 1 <br> ms Response Time, Delta E  2, HDR <br>-10, USB Type-C, Mini HDMI </span>
+            </div>
+            <div class="card_button">
+                <button class="btn-card">Learn more</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://dlcdnwebimgs.asus.com/gain/9377728e-e98f-4186-beb1-2f7d62f57318/w185/fwebp" alt="">
+            </div>
+            <div class="card_name">
+                <h2>ZenScreen Ink MB14AHD</h2>
+            </div>
+            <div class="card_discription">
+                <span>ASUS ZenScreen Ink MB14AHD <br> portable monitor  14-inch FHD <br> (1920 x 1080), IPS, 10-point touch, <br> Stylus Pen, USB Type-C, Micro HDMI,</span>
+            </div>
+            <div class="card_button">
+                <button class="btn-card">Learn more</button>
+            </div>
+        </div></div>
+      <div class="thrrow">  
+              <div class="card">
+            <div class="card_img">
+                <img src="https://dlcdnwebimgs.asus.com/gain/3692a246-4ade-4f45-92a0-a6d3529ce355/w185/fwebp" alt="">
+            </div>
+            <div class="card_name">
+                <h2>ASUS ZenScreen OLED MQ16AH</h2>
+            </div>
+            <div class="card_discription">
+                <span>ASUS ZenScreen OLED MQ16AH <br> portable monitor 16 inch (15.6 inch<br> viewable) FHD (1920 x 1080), OLED,<br> 100% DCI-P3, 1 ms Response Time,</span>
+            </div>
+            <div class="card_button">
+                <button class="btn-card">Learn more</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://dlcdnwebimgs.asus.com/gain/31496cf1-0ee5-4c74-b204-74d95ea0719c/w185/fwebp" alt="">
+            </div>
+            <div class="card_name">
+                <h2>ASUS ZenScreen GO MB16AWP<br></h2>
+            </div>
+            <div class="card_discription">
+                <span>ASUS ZenScreen Go MB16AWP <br> Wireless Portable Monitor- 16 inch <br> (15.6 inch viewable), Wireless <br> mirroring, IPS, USB Type-C, mini</span>
+            </div>
+            <div class="card_button">
+                <button class="btn-card">Learn more</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://dlcdnwebimgs.asus.com/gain/76385550-8c83-44f8-b34f-f2581c514a7a/w185/fwebp" alt="">
+            </div>
+            <div class="card_name">
+                <h2>ProArt Display PA147CDV</h2>
+            </div>
+            <div class="card_discription">
+                <span>ASUS ProArt Display PA147CDV <br>Creative Tool 14-inch, 32:9, IPS, Full <br> HD (1920 x 550), 100% sRGB, 100% <br> Rec.709, Color Accuracy ΔE 2, <br> Calman Verified, USB-C,</span>
+            </div>
+            <div class="card_button">
+                <button class="btn-card">Learn more</button>
+            </div>
+        </div></div> 
+      </div>
+      <footer>
+        <div class="footer_main-container">
+            <div class="leftside_footer">
+                <div class="column">
+                <div class="row1">
+<ul>
+    <div class="footer-header">Shop and Learn</div>
+       <li><a href=""> Mobile / Handhelds</a></li>
+       <li><a href="">Phones</a></li>
+       <li><a href="">Accessories</a></li>
+       <li><a href="">Laptops</a></li>
+       <li><a href="">For Home</a></li>
+       <li><a href="">For Work</a></li>
+       <li><a href="">For Creators</a></li>
+       <li><a href="">For Students</a></li>
+       <li><a href="">For Gaming</a></li>
+       <li><a href="">Accessories</a></li>
+       <li><a href="">Displays / Desktops</a></li>
+       <li><a href="">Monitors</a></li>
+       <li><a href="">Projectors</a></li>
+       <li><a href="">All-in-One PCs</a></li>
+       <li><a href="">Tower PCs</a></li>
+       <li><a href="">Gaming Tower PCs</a></li>
+</ul>
+                </div>
+                <div class="row1">
+                    <ul>
+                        <li class="footer-header"><a href="" >></a></li>
+                        <li><a href="">NUCs</a></li>
+                        <li><a href="">Mini PCs</a></li>
+                        <li><a href="">Workstations</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Motherboards / Components</a></li>
+                        <li><a href="">Motherboards</a></li>
+                        <li><a href="">Graphics Cards</a></li>
+                        <li><a href="">Gaming Cases</a></li>
+                        <li><a href="">Cooling</a></li>
+                        <li><a href="">Power Supply Units</a></li>
+                        <li><a href="">Sound Cards</a></li>
+                        <li><a href="">Optical Drives</a></li>
+                        <li><a href="">Data Storage</a></li>
+                        <li><a href="">External Graphics Docks</a></li>
+                        <li><a href="">Networking / IoT / Servers</a></li>
+                        <li><a href="">WiFi 7</a></li>
+                        <li><a href="">WiFi 6</a></li>
+                        <li><a href="">WiFi Routers</a></li>
+                        <li><a href="">Whole Home Mesh WiFi System</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="column">
+                <div class="row1">
+                    <ul>
+                        <li class="footer-header"><a href="">></a></li>
+                        <li><a href="">Business Network Solutions</a></li>
+                        <li><a href="">Wired Networking</a></li>
+                        <li><a href="">Intelligent Robots</a></li>
+                        <li><a href="">AIoT & Industrial Solution</a></li>
+                        <li><a href="">Servers</a></li>
+                        <li><a href="">Smart Home</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Keyboards</a></li>
+                        <li><a href="">Mice and Mouse Pads</a></li>
+                        <li><a href="">Headsets and Audio</a></li>
+                        <li><a href="">Streaming Kits</a></li>
+                        <li><a href="">Apparel Bags and Gear</a></li>
+                        <li><a href="">Cases and Protection</a></li>
+                        <li><a href="">Adapters and Chargers</a></li>
+                        <li><a href="">Docks Dongles and Cable</a></li>
+                        <li><a href="">Power Banks</a></li>
+                        <li><a href="">Controller</a></li>
+                        <li><a href="">Gimbal</a></li>
+                    </ul>
+                </div>
+                <div class="row1">
+                <ul>
+                    <div class="footer-header"> Learn more</div>
+                    <li><a href="">Asus Design Center</a></li>
+                    <li><a href="">ASUSPRO</a></li>
+                    <li><a href="">Automotive Solutions</a></li>
+                    <li><a href="">AVC Licensing Notice</a></li>
+                    <li><a href="">ASUS Blog</a></li>
+                </ul>
+                </div>
+                </div>
+                <div class="column">
+                <div class="row1">
+                <ul>
+                    <div class="footer-header">Support</div>
+                    <li><a href="">Check Repair Status</a></li>
+                    <li><a href="">Find Service Locations</a></li>
+                    <li><a href="">Product Registration</a></li>
+                    <li><a href="">Email Us</a></li>
+                    <li><a href="">Call Us</a></li>
+                    <li><a href="">Security Advisory</a></li>
+                    <li><a href="">ASUS Support Videos</a></li>
+                    <li><a href="">MyASUS</a></li>
+                </ul>
+                </div>
+                <div class="row1">
+                <ul>
+                    <div class="footer-header">About Us</div>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">About CSR for global</a></li>
+                    <li><a href="">Press Room</a></li>
+                    <li><a href="">ASUSTOR Inc.</a></li>
+                    <li><a href="">ASUS Cloud Corporation</a></li>
+                    <li><a href="">UniMax Electronics Inc.</a></li>
+                    <li><a href="">About ASUS</a></li>
+                </ul>
+                </div>
+                </div>
+        </div>
+        </div>     
+           <div class="social_media-link">
+            <div class="link_account">
+            <a href="https://www.instagram.com/asus/"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9.52A2.48 2.48 0 1 0 14.48 12A2.48 2.48 0 0 0 12 9.52Zm9.93-2.45a6.53 6.53 0 0 0-.42-2.26a4 4 0 0 0-2.32-2.32a6.53 6.53 0 0 0-2.26-.42C15.64 2 15.26 2 12 2s-3.64 0-4.93.07a6.53 6.53 0 0 0-2.26.42a4 4 0 0 0-2.32 2.32a6.53 6.53 0 0 0-.42 2.26C2 8.36 2 8.74 2 12s0 3.64.07 4.93a6.86 6.86 0 0 0 .42 2.27a3.94 3.94 0 0 0 .91 1.4a3.89 3.89 0 0 0 1.41.91a6.53 6.53 0 0 0 2.26.42C8.36 22 8.74 22 12 22s3.64 0 4.93-.07a6.53 6.53 0 0 0 2.26-.42a3.89 3.89 0 0 0 1.41-.91a3.94 3.94 0 0 0 .91-1.4a6.6 6.6 0 0 0 .42-2.27C22 15.64 22 15.26 22 12s0-3.64-.07-4.93Zm-2.54 8a5.73 5.73 0 0 1-.39 1.8A3.86 3.86 0 0 1 16.87 19a5.73 5.73 0 0 1-1.81.35H8.94A5.73 5.73 0 0 1 7.13 19a3.51 3.51 0 0 1-1.31-.86A3.51 3.51 0 0 1 5 16.87a5.49 5.49 0 0 1-.34-1.81V8.94A5.49 5.49 0 0 1 5 7.13a3.51 3.51 0 0 1 .86-1.31A3.59 3.59 0 0 1 7.13 5a5.73 5.73 0 0 1 1.81-.35h6.12a5.73 5.73 0 0 1 1.81.35a3.51 3.51 0 0 1 1.31.86A3.51 3.51 0 0 1 19 7.13a5.73 5.73 0 0 1 .35 1.81V12c0 2.06.07 2.27.04 3.06Zm-1.6-7.44a2.38 2.38 0 0 0-1.41-1.41A4 4 0 0 0 15 6H9a4 4 0 0 0-1.38.26a2.38 2.38 0 0 0-1.41 1.36A4.27 4.27 0 0 0 6 9v6a4.27 4.27 0 0 0 .26 1.38a2.38 2.38 0 0 0 1.41 1.41a4.27 4.27 0 0 0 1.33.26h6a4 4 0 0 0 1.38-.26a2.38 2.38 0 0 0 1.41-1.41a4 4 0 0 0 .26-1.38V9a3.78 3.78 0 0 0-.26-1.38ZM12 15.82A3.81 3.81 0 0 1 8.19 12A3.82 3.82 0 1 1 12 15.82Zm4-6.89a.9.9 0 0 1 0-1.79a.9.9 0 0 1 0 1.79Z"/></svg></a>
+            <a href="https://www.youtube.com/user/asus"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"><path fill="currentColor" d="M11.603 9.833L9.357 8.785C9.161 8.694 9 8.796 9 9.013v1.974c0 .217.161.319.357.228l2.245-1.048c.197-.092.197-.242.001-.334zM10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4zm0 13.5c-4.914 0-5-.443-5-3.9s.086-3.9 5-3.9s5 .443 5 3.9s-.086 3.9-5 3.9z"/></svg></a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16"><path fill="currentColor" d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131c.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512"><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6L379.4 396h-95.6L209 298.1L123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5l78.2-89.5h47.5zm-37.8 251.6L153.4 142.9h-28.3l171.8 224.7h26.3z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"><path fill="currentColor" d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4zM7.65 13.979H5.706V7.723H7.65v6.256zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973zm8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699v3.699z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40   " height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162c-.105-.949-.199-2.403.041-3.439c.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911c1.024 0 1.518.769 1.518 1.688c0 1.029-.653 2.567-.992 3.992c-.285 1.193.6 2.165 1.775 2.165c2.128 0 3.768-2.245 3.768-5.487c0-2.861-2.063-4.869-5.008-4.869c-3.41 0-5.409 2.562-5.409 5.199c0 1.033.394 2.143.889 2.741c.099.12.112.225.085.345c-.09.375-.293 1.199-.334 1.363c-.053.225-.172.271-.401.165c-1.495-.69-2.433-2.878-2.433-4.646c0-3.776 2.748-7.252 7.92-7.252c4.158 0 7.392 2.967 7.392 6.923c0 4.135-2.607 7.462-6.233 7.462c-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146c1.123.345 2.306.535 3.55.535c6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg></a>
+            </div> 
+         </div>
+         <div class="last_footer">
+            <div class="lastleft">
+                <span>©ASUSTeK Computer Inc. All rights reserved</span>
+                <a href="">Terms of use Notice</a>
+                <a href="">Privacy Policy</a>
+            </div>
+            <div class="lastright">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1024 1024"><path fill="currentColor" d="M854.4 800.9c.2-.3.5-.6.7-.9C920.6 722.1 960 621.7 960 512s-39.4-210.1-104.8-288c-.2-.3-.5-.5-.7-.8c-1.1-1.3-2.1-2.5-3.2-3.7c-.4-.5-.8-.9-1.2-1.4l-4.1-4.7l-.1-.1c-1.5-1.7-3.1-3.4-4.6-5.1l-.1-.1c-3.2-3.4-6.4-6.8-9.7-10.1l-.1-.1l-4.8-4.8l-.3-.3c-1.5-1.5-3-2.9-4.5-4.3c-.5-.5-1-1-1.6-1.5c-1-1-2-1.9-3-2.8c-.3-.3-.7-.6-1-1C736.4 109.2 629.5 64 512 64s-224.4 45.2-304.3 119.2c-.3.3-.7.6-1 1c-1 .9-2 1.9-3 2.9c-.5.5-1 1-1.6 1.5c-1.5 1.4-3 2.9-4.5 4.3l-.3.3l-4.8 4.8l-.1.1c-3.3 3.3-6.5 6.7-9.7 10.1l-.1.1c-1.6 1.7-3.1 3.4-4.6 5.1l-.1.1c-1.4 1.5-2.8 3.1-4.1 4.7c-.4.5-.8.9-1.2 1.4c-1.1 1.2-2.1 2.5-3.2 3.7c-.2.3-.5.5-.7.8C103.4 301.9 64 402.3 64 512s39.4 210.1 104.8 288c.2.3.5.6.7.9l3.1 3.7c.4.5.8.9 1.2 1.4l4.1 4.7c0 .1.1.1.1.2c1.5 1.7 3 3.4 4.6 5l.1.1c3.2 3.4 6.4 6.8 9.6 10.1l.1.1c1.6 1.6 3.1 3.2 4.7 4.7l.3.3c3.3 3.3 6.7 6.5 10.1 9.6c80.1 74 187 119.2 304.5 119.2s224.4-45.2 304.3-119.2a300 300 0 0 0 10-9.6l.3-.3c1.6-1.6 3.2-3.1 4.7-4.7l.1-.1c3.3-3.3 6.5-6.7 9.6-10.1l.1-.1c1.5-1.7 3.1-3.3 4.6-5c0-.1.1-.1.1-.2c1.4-1.5 2.8-3.1 4.1-4.7c.4-.5.8-.9 1.2-1.4a99 99 0 0 0 3.3-3.7zm4.1-142.6c-13.8 32.6-32 62.8-54.2 90.2a444.07 444.07 0 0 0-81.5-55.9c11.6-46.9 18.8-98.4 20.7-152.6H887c-3 40.9-12.6 80.6-28.5 118.3zM887 484H743.5c-1.9-54.2-9.1-105.7-20.7-152.6c29.3-15.6 56.6-34.4 81.5-55.9A373.86 373.86 0 0 1 887 484zM658.3 165.5c39.7 16.8 75.8 40 107.6 69.2a394.72 394.72 0 0 1-59.4 41.8c-15.7-45-35.8-84.1-59.2-115.4c3.7 1.4 7.4 2.9 11 4.4zm-90.6 700.6c-9.2 7.2-18.4 12.7-27.7 16.4V697a389.1 389.1 0 0 1 115.7 26.2c-8.3 24.6-17.9 47.3-29 67.8c-17.4 32.4-37.8 58.3-59 75.1zm59-633.1c11 20.6 20.7 43.3 29 67.8A389.1 389.1 0 0 1 540 327V141.6c9.2 3.7 18.5 9.1 27.7 16.4c21.2 16.7 41.6 42.6 59 75zM540 640.9V540h147.5c-1.6 44.2-7.1 87.1-16.3 127.8l-.3 1.2A445.02 445.02 0 0 0 540 640.9zm0-156.9V383.1c45.8-2.8 89.8-12.5 130.9-28.1l.3 1.2c9.2 40.7 14.7 83.5 16.3 127.8H540zm-56 56v100.9c-45.8 2.8-89.8 12.5-130.9 28.1l-.3-1.2c-9.2-40.7-14.7-83.5-16.3-127.8H484zm-147.5-56c1.6-44.2 7.1-87.1 16.3-127.8l.3-1.2c41.1 15.6 85 25.3 130.9 28.1V484H336.5zM484 697v185.4c-9.2-3.7-18.5-9.1-27.7-16.4c-21.2-16.7-41.7-42.7-59.1-75.1c-11-20.6-20.7-43.3-29-67.8c37.2-14.6 75.9-23.3 115.8-26.1zm0-370a389.1 389.1 0 0 1-115.7-26.2c8.3-24.6 17.9-47.3 29-67.8c17.4-32.4 37.8-58.4 59.1-75.1c9.2-7.2 18.4-12.7 27.7-16.4V327zM365.7 165.5c3.7-1.5 7.3-3 11-4.4c-23.4 31.3-43.5 70.4-59.2 115.4c-21-12-40.9-26-59.4-41.8c31.8-29.2 67.9-52.4 107.6-69.2zM165.5 365.7c13.8-32.6 32-62.8 54.2-90.2c24.9 21.5 52.2 40.3 81.5 55.9c-11.6 46.9-18.8 98.4-20.7 152.6H137c3-40.9 12.6-80.6 28.5-118.3zM137 540h143.5c1.9 54.2 9.1 105.7 20.7 152.6a444.07 444.07 0 0 0-81.5 55.9A373.86 373.86 0 0 1 137 540zm228.7 318.5c-39.7-16.8-75.8-40-107.6-69.2c18.5-15.8 38.4-29.7 59.4-41.8c15.7 45 35.8 84.1 59.2 115.4c-3.7-1.4-7.4-2.9-11-4.4zm292.6 0c-3.7 1.5-7.3 3-11 4.4c23.4-31.3 43.5-70.4 59.2-115.4c21 12 40.9 26 59.4 41.8a373.81 373.81 0 0 1-107.6 69.2z"/></svg>
+                <a href="">Global / English</a>
+            </div>
+        </div>
+         
+
+     </footer>
+    <script>
+        const cross=document.getElementById("cross");
+        const headerp5=document.querySelector(".headerpart5");
+        const mainbanner=document.querySelector(".main_banner")
+        function ankit()
+        {
+        headerp5.style.top="29.5%";
+        headerp5.style.transition="1.5s"
+    
+       }
+       function karan()
+       {
+        headerp5.style.top="-15%";
+        headerp5.style.transition="1.5s"
+        mainbanner.setAttribute('src',$`{process.env.REACT_APP_ANKIT_VERMA}`)
+       }
+       console.log(mainbanner)
+    
+    
+        </script>
+</body>
+</html>
